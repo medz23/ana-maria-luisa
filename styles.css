@@ -1,0 +1,164 @@
+
+*{
+  box-sizing: border-box;
+}
+
+.small{
+  width: 10%;
+}
+.nav1{
+  background: linear-gradient(343deg , #8567a4, #9c84b5, #41107b , #9760d1 );
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+ text-transform: uppercase;
+ font-weight: 500;
+ letter-spacing: 1px;
+
+}
+.nav * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.nav a {
+  padding: 0.3em 0;
+  color: #391339;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.nav a:before,
+.nav a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #9b59b6;
+  width: 0;
+}
+.nav a:before {
+  top: 0;
+  left: 0;
+}
+.nav a:after {
+  bottom: 0;
+  right: 0;
+}
+.nav a:hover,
+.nav .current a {
+  color: #ffffff;
+}
+.nav a:hover:before,
+.nav .current a:before,
+.nav a:hover:after,
+.nav .current a:after {
+  width: 100%;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:45% 0%}
+  50%{background-position:56% 100%}
+  100%{background-position:45% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:45% 0%}
+  50%{background-position:56% 100%}
+  100%{background-position:45% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:45% 0%}
+  50%{background-position:56% 100%}
+  100%{background-position:45% 0%}
+}
+#welcome-section{
+ background-color: #e8e8e8;
+ height: 100vh;
+ min-height: 500px;
+ background-size: cover;
+ background-position: center;
+
+}
+.image{
+    border-radius: 50%;
+    width:20%;
+
+  }
+.my-4{
+  background-color: #41107b;
+  max-width: 50%;
+       margin: 40px auto;
+       text-align: center;
+}
+hr:after {
+    background:#e8e8e8;
+    content: '< >';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+#center{
+  width:10%;
+}
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li{
+  padding-right: 20px;
+}
+.nav-link{
+  font-size: 1.1em !important;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+
+}
+#lil{
+  background-size: 50%;
+  width: 50%;
+  margin:auto;
+}
+.carousel-caption {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  text-shadow: 1px 1px 15px #000;
+}
+#about-me{
+  padding-top: 5%;
+  text-align: center;
+  background-color: #f5f5f5;
+
+
+}
+#about-me h1{
+  padding-bottom: 2%;
+
+
+}
+.forhover img{
+  width: 100%;
+}
+#certifications img{
+  width: 90%;
+}
+#profile-lin{
+  padding-top:10px;
+    background-color: #9c84b5;
+    color: black;
+}
+#profile-lin a {
+  color: black;
+  
+}
