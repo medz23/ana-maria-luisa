@@ -1,41 +1,40 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Almendra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=VT323&display=swap');
 *{
   box-sizing: border-box;
+
 }
 
 .small{
-  width: 10%;
+  width: 150px;
+}
+
+
+.container-fluid h2{
+
 }
 .nav1{
-  background: linear-gradient(343deg , #8567a4, #9c84b5, #9760d1 );
-  background-size: 800% 800%;
-
-  -webkit-animation: AnimationName 15s ease infinite;
-  -moz-animation: AnimationName 15s ease infinite;
-  animation: AnimationName 15s ease infinite;
+  background-color:#291A38;
  text-transform: uppercase;
  font-weight: 500;
  letter-spacing: 1px;
 
 }
 .nav * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+  font-size: 25px;
 }
 .nav li {
   display: inline-block;
   list-style: outside none none;
-  margin: 0.5em 1.5em;
   padding: 0;
 }
 .nav a {
-  padding: 0.3em 0;
-  color: #391339;
+  padding: 0.1em 0;
+  color: #e8e8e8;
   position: relative;
   text-decoration: none;
   display: inline-block;
+  font-family: 'VT323', monospace;
 }
 .nav a:before,
 .nav a:after {
@@ -57,7 +56,7 @@
 }
 .nav a:hover,
 .nav .current a {
-  color: #ffffff;
+  color: #f8f8f8;
 }
 .nav a:hover:before,
 .nav .current a:before,
@@ -84,7 +83,7 @@
 
 #welcome-section{
 background: url(img/bk.png);
- background-color: #e8e8e8;
+ background-color: #f8f8f8;
  height: 110vh;
  min-height: 500px;
  background-size: cover;
@@ -92,8 +91,9 @@ background: url(img/bk.png);
 
 }
 .image{
-    border-radius: 50%;
+    border-radius: 30px;
     width:20%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 
   }
 .my-4{
@@ -140,7 +140,6 @@ hr:after {
 #about-me{
   padding-top: 5%;
   text-align: center;
-  background-color: #f5f5f5;
 
 
 }
@@ -163,6 +162,51 @@ hr:after {
 #profile-lin a {
   color: black;
 
+}
+
+.lead{
+  text-align:center;
+
+
+}
+
+.lead p{
+  font-family: 'VT323', monospace;
+}
+
+h2{
+font-family: 'Almendra', serif;
+
+}
+
+@keyframes crt-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  50.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.font-weight-light::after{
+  content:'';
+  display:inline-block;
+  margin-left:3px;
+  background-color:#391339;
+  animation-name:blink;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+}
+
+p.font-weight-light::after {
+  height:13px;
+  width:6px;
 }
 
 .container-skillbar {
