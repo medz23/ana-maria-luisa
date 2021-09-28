@@ -104,7 +104,8 @@ function typeWriter(id, ar) {
 }
 
 
-function openWork(evt, cityName) {
+
+function openWork(evt, works) {
   let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -113,11 +114,10 @@ function openWork(evt, cityName) {
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
-
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(works).style.display = "block";
   evt.currentTarget.className += " active";
-  if (cityName === "Skills" && document.getElementById(cityName).style.display === "block") {
+  if (works === "Skills" && document.getElementById(works).style.display === "block") {
     $(".skillbar").each(function() {
       $(this)
         .find(".skillbar-bar")
@@ -130,3 +130,17 @@ function openWork(evt, cityName) {
 
   }
 }
+
+function toggleFunction(evt, certifications) {
+  let i, tabcontentc, tablinksc;
+  tabcontentc = document.getElementsByClassName("tabcontent-c");
+  for (i = 0; i < tabcontentc.length; i++) {
+    tabcontentc[i].style.display = "none";
+  }
+  tablinksc = document.getElementsByClassName("tablinks-c");
+  for (i = 0; i < tablinksc.length; i++) {
+    tablinksc[i].className = tablinksc[i].className.replace(" active", "");
+  }
+  document.getElementById(certifications).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
