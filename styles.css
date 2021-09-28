@@ -285,6 +285,7 @@ hr:after {
   outline: none;
   border:none;
   width: 100px;
+  border-radius: 1rem;
 font-family: 'Quattrocento Sans', sans-serif;
 }
 
