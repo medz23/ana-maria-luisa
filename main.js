@@ -1,3 +1,7 @@
+// aos animations
+AOS.init();
+
+// smooth scroll
 let mainNavLinks = document.querySelectorAll("nav ul li a");
 
 mainNavLinks.forEach(link => {
@@ -11,20 +15,20 @@ mainNavLinks.forEach(link => {
   });
 });
 
-var i = 0,
+let i = 0,
   a = 0,
   isBackspacing = false,
   isParagraph = false;
 
-// Typerwrite text content. Use a pipe to indicate the start of the second line "|".
-var textArray = [
+// typewriter welcome section
+let textArray = [
   "|FULL STACK WEB DEVELOPER",
   "|ARTIFICIAL INTELLIGENCE STUDENT",
   "|ANDROID DEVELOPMENT ENTHUSIAST",
 ];
 
 
-var speedForward = 100,
+let speedForward = 100,
   speedWait = 1000,
   speedBetweenLines = 1000,
   speedBackspace = 25;
@@ -33,7 +37,7 @@ var speedForward = 100,
 typeWriter("lead", textArray);
 
 function typeWriter(id, ar) {
-  var element = $("#" + id),
+  let element = $("#" + id),
     aString = ar[a],
     eHeader = element.children("h1"),
     eParagraph = element.children("p");
@@ -104,7 +108,7 @@ function typeWriter(id, ar) {
 }
 
 
-
+// work section
 function openWork(evt, works) {
   let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -131,6 +135,7 @@ function openWork(evt, works) {
   }
 }
 
+// certifications section
 function toggleFunction(evt, certifications) {
   let i, tabcontentc, tablinksc;
   tabcontentc = document.getElementsByClassName("tabcontent-c");

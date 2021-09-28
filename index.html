@@ -9,17 +9,19 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 	<link href="styles.css" rel="stylesheet">
 
 </head>
 
 <body>
-
+<!-- navbar -->
 	<nav class="navbar navbar-expand-md nav1">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><img class="small" src="./img/me.png">
@@ -33,6 +35,7 @@
 					<li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
 					<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+					<li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
 					<li class="nav-item"><a class="nav-link" href="#profile-link">Contact</a></li>
 				</ul>
 
@@ -40,7 +43,7 @@
 		</div>
 	</nav>
 
-
+<!-- welcome section -->
 	<header id="welcome-section">
 		<div class="container h-100">
 			<div class="row h-100 align-items-center">
@@ -48,7 +51,6 @@
 					<div>
 						<img src="./img/mypic.jpg" class="image" alt="">
 					</div>
-					<br>
 					<hr class="my-4">
 					<h2>Hi! I'm Mogoase Ana-Maria Luisa!</h2>
 					<div class="lead" id="lead">
@@ -61,9 +63,11 @@
 	</header>
 	<div class="bk">
 
-		<section id="about-me">
+<!-- about me section -->
+		<section id="about-me" data-aos="fade-right" data-aos-easing="linear"
+data-aos-duration="800">
 			<div class="card-me">
-				<div class="card-content">
+				<div class="card-content" >
 					<h2 class="card-title">About Me</h2>
 					<p class="card-body">My name is Mogoase Ana-Maria Luisa, but I prefer my nickname (Medi).
 						I live in Bucharest with my fiance! <br> I'm studying Artificial Intelligence at "Universitatea
@@ -78,12 +82,16 @@
 	</div>
 	</section>
 
+<!-- experience section -->
 	<div class="container">
 		<section id="experience">
 
-			<h3 class="text-center">About My Experience</h3>
+			<h2 class="text-center">About My Experience</h2>
+			<div class="indicator"></div>
 
-			<div class="content">
+
+			<div class="content" data-aos="fade-left" data-aos-easing="linear"
+ data-aos-duration="800">
 				<div class="tab">
 					<button class="tablinks active" onclick="openWork(event, 'Work')"><i class="fa fa-briefcase"></i> Work</button>
 					<button class="tablinks" onclick="openWork(event, 'Volunteering')"><i class="fa fa-recycle"></i> Volunteering</button>
@@ -224,13 +232,14 @@
 		</section>
 
 
+<!-- projects section -->
 		<!-- TODO: PRoiectele sunt cam varza, schimba tot > FA CARDURI QT -->
 		<section id="projects">
 			<h2 class="text-center">My projects</h2>
-			<br><br>
-			<div class="forhover ">
+			<div class="indicator"></div>
 				<div class="container-fluid padding">
-					<div class="row padding">
+					<div class="row padding"  data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="500">
 						<div class="col-md-4">
 							<div class="card">
 								<img src="./img/4.png" alt="">
@@ -257,12 +266,10 @@
 								<a href="https://codepen.io/medz23/pen/rNeNEMq" id="wobble_skew" class="btn btn-primary card-btns" target="_blank">See more</a>
 							</div>
 						</div>
-
-
 					</div>
-					<br><br>
 
-					<div class="row padding">
+					<div class="row padding" data-aos="fade-up" data-aos-easing="linear"
+     data-aos-duration="500">
 						<div class="col-md-4">
 							<div class="card">
 								<img src="./img/3.png" alt="">
@@ -290,17 +297,20 @@
 						</div>
 					</div>
 				</div>
-			</div>
-	</div>
-	</section>
-	<section id="certifications">
-		<div class="togglerC container">
-		<h2 class="text-center">My certifications</h2>
-			<button class="tablinks-c active" onclick="toggleFunction(event, 'Google')"><img src="./img/google.png" alt=""> Atelierul Google</button>
-			<button class="tablinks-c" onclick="toggleFunction(event, 'Codecademy')"><img src="./img/codecademy.png" alt=""> Codecademy</button>
-			<button class="tablinks-c" onclick="toggleFunction(event, 'Freecodecamp')"><img src="./img/freecode.png" alt=""> Freecodecamp</button>
 
-		<div  id="Google" class="tabcontent-c active2">
+	</section>
+
+	<!-- certifications section -->
+	<section id="certifications" data-aos="fade-up" data-aos-easing="linear"
+data-aos-duration="500">
+		<div class="togglerC container ">
+		<h2 class="text-center">My certifications</h2>
+		<div class="indicator"></div>
+			<button class="tablinks-c active" onclick="toggleFunction(event, 'Google')"><img src="./img/google.png" alt=""> Atelierul Google</button>
+			<button class="tablinks-c" onclick="toggleFunction(event, 'Freecodecamp')"><img src="./img/freecode.png" alt=""> Freecodecamp</button>
+					<button class="tablinks-c" onclick="toggleFunction(event, 'Codecademy')"><img src="./img/codecademy.png" alt=""> Codecademy</button>
+
+		<div  id="Google" class="tabcontent-c active2" >
 			<div class="container-fluid padding">
 				<div class="row padding">
 					<div class="col-md-6">
@@ -308,6 +318,20 @@
 					</div>
 					<div class="col-md-6">
 						<img src="./img/dPython.jpeg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div  id="Freecodecamp" class="tabcontent-c">
+			<div class="container-fluid padding">
+				<div class="row padding">
+					<div class="col-md-6">
+						<img src="./img/c1.png" alt=""></a>
+					</div>
+					<div class="col-md-6">
+						<img src="./img/c3.png" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -335,23 +359,12 @@
 			</div>
 		</div>
 
-		<div  id="Freecodecamp" class="tabcontent-c">
-			<div class="container-fluid padding">
-				<div class="row padding">
-					<div class="col-md-6">
-						<img src="./img/c1.png" alt=""></a>
-					</div>
-					<div class="col-md-6">
-						<img src="./img/c3.png" alt=""></a>
-					</div>
-				</div>
-			</div>
-		</div>
 
 	</section>
 
 	</div>
 
+<!-- footer section also contact me  -->
 	<section id="profile-lin">
 		<h1>Contact Me</h1>
 		<a href="https://www.linkedin.com/in/ana-maria-luisa-mogoase-87b4221b3/" target="_blank">
