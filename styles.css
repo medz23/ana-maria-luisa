@@ -213,6 +213,9 @@ p.font-weight-light::after {
 }
 
 /* about me section */
+#about-me{
+  padding-top: 70px;
+}
 .card-me {
   color: var(--clr-neutral-100);
   background-image: url(img/me-card.jpeg);
@@ -429,13 +432,48 @@ p.font-weight-light::after {
 
 /* footer / contact me */
 #profile-lin {
-  padding-top: 10px;
-  background-color: #9c84b5;
-  color: black;
+  padding-top: 20px;
+  background-color: #291A38;
+  color: white;
+  padding-bottom: 20px;
 }
 
-#profile-lin a {
-  color: black;
+.contact-me {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-me a {
+  color: white;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-left: 30px;
+}
+
+.contact-me a:hover {
+  color: var(--clr-accent-400);
+transform: scale(1.2);
+}
+
+.indicator-contact{
+  border-bottom: 1px solid white;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.copyright span{
+  color: var(--clr-accent-400);
 }
 
 .indicator {
@@ -449,6 +487,7 @@ p.font-weight-light::after {
 h2 {
   font-family: 'Quattrocento Sans', sans-serif;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 
