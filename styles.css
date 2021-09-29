@@ -316,7 +316,7 @@ p.font-weight-light::after {
   }
 }
 
-/* experience section */
+/* projects section */
 .card:hover {
   transform: scale(1.04);
 }
@@ -330,16 +330,14 @@ p.font-weight-light::after {
 }
 
 .card-titles {
-
   margin: 10px 10px 10px 10px;
   text-align: center;
   font-family: 'VT323', monospace;
 }
 
 .card-bodys {
-
-  margin: 10px 10px 10px 10px;
-  text-align: center;
+  margin: 0px 20px 10px 20px;
+  text-align: justify;
   font-family: 'Quattrocento Sans', sans-serif;
 }
 
@@ -461,9 +459,10 @@ transform: scale(1.2);
 
 .indicator-contact{
   border-bottom: 1px solid white;
-  width: 90%;
+  width: 20%;
   margin: 0 auto;
   margin-top: 10px;
+  opacity: 0.5;
 }
 
 .copyright{
@@ -491,7 +490,6 @@ h2 {
 }
 
 
-/* projects section */
 .content {
   margin: 70px auto 70px auto;
   max-width: 55ch;
@@ -695,6 +693,15 @@ h2 {
   margin-top: 20px;
   max-width: 500px;
   border: 2px solid var(--clr-accent-400);
+
+}
+
+.tabcontent-c img:hover{
+  transform: scale(1.05);
+  border-bottom: 8px solid var(--clr-accent-400);
+  border-right: 8px solid var(--clr-accent-400);
+  border-left: 1px solid var(--clr-accent-400);
+  border-top: 1px solid var(--clr-accent-400);
 
 }
 
