@@ -148,7 +148,6 @@ html {
 /* .bk{
   background-image:url(img/bk-1.png);
    background-size: cover;
-
 } */
 .image {
   border-radius: 30px;
@@ -339,6 +338,11 @@ p.font-weight-light::after {
   margin: 0px 20px 10px 20px;
   text-align: justify;
   font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.card-bodys span{
+  font-weight: bold;
+  color: var(--clr-accent-400);
 }
 
 .card-btns {
@@ -653,7 +657,6 @@ h2 {
 /* certifications section */
 .togglerC {
   margin: 70px auto 70px auto;
-  overflow: hidden;
 }
 
 .tablinks-c {
