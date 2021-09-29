@@ -107,6 +107,8 @@ function typeWriter(id, ar) {
   }
 }
 
+// bubbles
+
 
 // work section
 function openWork(evt, works) {
