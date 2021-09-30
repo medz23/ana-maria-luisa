@@ -40,17 +40,17 @@ html {
   letter-spacing: 1px;
 }
 
-.nav * {
+.nav-div * {
   font-size: 25px;
 }
 
-.nav li {
+.nav-div li {
   display: inline-block;
   list-style: outside none none;
   padding: 0;
 }
 
-.nav a {
+.nav-div a {
   padding: 0.1em 0;
   color: #e8e8e8;
   position: relative;
@@ -59,8 +59,8 @@ html {
   font-family: 'VT323', monospace;
 }
 
-.nav a:before,
-.nav a:after {
+.nav-div a:before,
+.nav-div a:after {
   height: 3px;
   position: absolute;
   content: '';
@@ -70,25 +70,25 @@ html {
   width: 0;
 }
 
-.nav a:before {
+.nav-div a:before {
   top: 0;
   left: 0;
 }
 
-.nav a:after {
+.nav-div a:after {
   bottom: 0;
   right: 0;
 }
 
-.nav a:hover,
-.nav .current a {
+.nav-div a:hover,
+.nav-div .current a {
   color: #f8f8f8;
 }
 
-.nav a:hover:before,
-.nav .current a:before,
-.nav a:hover:after,
-.nav .current a:after {
+.nav-div a:hover:before,
+.nav-div .current a:before,
+.nav-div a:hover:after,
+.nav-div .current a:after {
   width: 100%;
 }
 
@@ -146,10 +146,17 @@ html {
   font-size: 1.1em !important;
 }
 
+.custom-toggler.navbar-toggler {
+  border-color: #fff;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 /* welcome section */
 #welcome-section {
-  background: url(img/cover.png);
+  background: url(img/me-cover.png);
   height: 100vh;
   min-height: 500px;
   background-size: cover;
