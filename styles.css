@@ -496,7 +496,7 @@ transform: scale(1.2);
 }
 
 .copyright span{
-  color: var(--clr-accent-400);
+  color: #7DECBE;
 }
 
 .indicator {
