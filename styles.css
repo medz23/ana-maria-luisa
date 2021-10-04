@@ -588,6 +588,11 @@ h2 {
   padding: 6px 12px;
 }
 
+.tabcontent span {
+  font-weight: bold;
+  color: var(--clr-accent-400);
+}
+
 .active {
   display: block;
 }
