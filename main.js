@@ -22,7 +22,7 @@ let i = 0,
 
 // typewriter welcome section
 let textArray = [
-  "|FULL STACK WEB DEVELOPER",
+  "|WEB DEVELOPER",
   "|ARTIFICIAL INTELLIGENCE STUDENT",
   "|ANDROID DEVELOPMENT ENTHUSIAST",
 ];
