@@ -4,51 +4,49 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mogoase Ana-Maria Luisa</title>
-	<script src="jquery-3.5.1.min.js"></script>
+	<title>Mocanu Ana-Maria Luisa</title>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 	<link href="styles.css" rel="stylesheet">
-
+	<script src="main.js" defer></script>
 </head>
 
 <body>
-	<!-- navbar -->
 	<nav class="navbar navbar-expand-md nav1" id="navbar">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
 				<img class="small" src="./img/me-logo.png">
 			</a>
 
-			<button class="navbar-toggler ml-auto custom-toggler" id="nav-button" type="button" data-toggle="collapse" data-target="#navbarResponsive" name="button">
+			<button class="navbar-toggler ml-auto custom-toggler" id="nav-button" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon" id="nav-span"></span>
 			</button>
-			<!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button> -->
 			<div class="collapse navbar-collapse flex-grow-0 nav-div" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item-active"><a class="nav-link" href="#welcome-section">Welcome</a></li>
 					<li class="nav-item"><a class="nav-link" href="#about-me">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+					<li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
 					<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
 					<li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
 					<li class="nav-item"><a class="nav-link" href="#profile-lin">Contact</a></li>
 				</ul>
-
 			</div>
 		</div>
 	</nav>
+
 	<div class="bubbles">
-		<!-- welcome section -->
+		<div id="bubbles-container"></div>
+
 		<header id="welcome-section">
 			<div class="container h-100">
 				<div class="row h-100 align-items-center">
@@ -57,335 +55,273 @@
 							<img src="./img/mypic.jpg" class="image" alt="">
 						</div>
 						<hr class="my-4">
-						<h2>Hi! I'm Mogoase Ana-Maria Luisa!</h2>
+						<h2>Hi! I'm Mocanu Ana-Maria Luisa!</h2>
 						<div class="lead" id="lead">
 							<p class="font-weight-light"></p>
 						</div>
-
 					</div>
 				</div>
 			</div>
 		</header>
-
-		<!-- about me section -->
-
 
 		<div class="container nobubbles">
 			<section id="about-me" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800">
 				<div class="card-me">
 					<div class="card-content">
 						<h2 class="card-title">About Me</h2>
-						<p class="card-body">My name is Mogoase Ana-Maria Luisa, but everyone addresses me by the nickname "Medi",
-							I live in Bucharest with my fiancé.</br>
-							I am currently studying the master's program 'Artificial Intelligence' at the University 'Politehnica' of Bucharest,
-							I graduated the bachelor's program at the same university in the field of Mechanical Engineering,
-							specialization in Thermal Systems and Equipment.
-							</br> I am currently working on web applications with Django, JavaScript, CSS3 and HTML5,
-							I have also developed a few applications in Android with Java, I am currently learning
-						the Spring framework to develop more on this side.</p>
-
+						<p class="card-body">My name is Mocanu Ana-Maria Luisa, but everyone addresses me by the
+							nickname "Medi". I live in Bucharest, Romania.</br>
+							I am currently a PhD student in Computer Science at the University Politehnica of Bucharest.
+							I also hold a Master's degree in Artificial Intelligence and a Bachelor's in Mechanical
+							Engineering from the same university.
+							</br> Beyond my research, I teach Python to bachelor's students. Professionally, I work as a
+							Software Engineer at Endava, where I focus on service-oriented and microservice
+							architectures using Java, Spring Boot, and various cloud technologies.</p>
 					</div>
 				</div>
-
-
-
 			</section>
 
-			<!-- experience section -->
-
-
 			<section id="experience">
-
 				<h2 class="text-center">About My Experience</h2>
 				<div class="indicator"></div>
 
-
 				<div class="content">
 					<div class="tab">
-						<button class="tablinks active" onclick="openWork(event, 'Work')"><i class="fa fa-briefcase"></i> Work</button>
-						<button class="tablinks" onclick="openWork(event, 'Volunteering')"><i class="fa fa-recycle"></i> Volunteering</button>
-						<button class="tablinks" onclick="openWork(event, 'Skills')"><i class="fa fa-code"></i> Skills</button>
+						<button class="tablinks active" onclick="openWork(event, 'Work')"><i
+								class="fa fa-briefcase"></i> Work</button>
+						<button class="tablinks" onclick="openWork(event, 'Education')"><i
+								class="fa fa-graduation-cap"></i> Education</button>
+						<button class="tablinks" onclick="openWork(event, 'Extra')"><i class="fa fa-plus"></i>
+							Extra</button>
+						<button class="tablinks" onclick="openWork(event, 'Skills')"><i class="fa fa-code"></i>
+							Skills</button>
 					</div>
 
 					<div id="Work" class="tabcontent active">
-						<h3>Previous work places</h3>
+						<h3>Work Experience</h3>
 						<ul>
+							<li>Software Engineer - Endava</li>
+							<h6><i class="fa fa-clock"></i> December 2021 - Present</h6>
+							<p>I collaborate with dedicated teams on designing and developing fintech projects.
+								<span>This role has enhanced my skills in software development, Agile methodologies, and
+									attention to detail while working with service-oriented and microservice
+									architectures.</span></p>
+
+							<li>Teacher - University Politehnica Bucharest</li>
+							<h6><i class="fa fa-clock"></i> October 2025 - Present</h6>
+							<p>I teach Python to Bachelor's students, helping them with exercises, projects, and
+								understanding core programming concepts. <span>I teach beginner-level Python in Google
+									Colaboratory and review their lab exercises, helping them build practical
+									programming skills.</span></p>
+
 							<li>Freelance - Web Developer</li>
-							<h6><i class="fa fa-clock"></i> April 2021 - present</h6>
-							<p>
-								I create web pages (front-end / back-end and sometimes the design part) in my free time,
-								so <span>I improved my creativity, my eficiency in order to deliver a project faster, my debugging skills and I
-								gained experience on the field.</span>
-								Every time I start a project <span>I think about its finality and the success on the market.</span></p>
-							<li>Intership - MARCO & ALEX - Refrigeration Technician</li>
+							<h6><i class="fa fa-clock"></i> April 2021 - December 2021</h6>
+							<p>I created web pages (front-end / back-end and sometimes the design part) in my free time,
+								so <span>I improved my creativity, my efficiency in order to deliver a project faster,
+									my debugging skills and I gained experience in the field.</span></p>
+
+							<li>Internship - MARCO & ALEX - Refrigeration Technician</li>
 							<h6><i class="fa fa-clock"></i> July 2020 - August 2020</h6>
-							<p>I worked mostly as a designer in AutoCAD and other specific softwares
-								for the field, to calculate and design according to exact data for the following: capacitors, evaporators,
-								buildings. <span>This experience made me a more accustomed person, I improved myself as an engineer
-								but also trained my quick thinking in unpredictable situations.</span></p>
-							<li>Full-Time - Tucano Madagascar - Barista</li>
-							<h6><i class="fa fa-clock"></i> Octomber 2019 - May 2020</h6>
-							<p>
-								This job has helped me become <span>a person who adapts easily to any work environment,
-								an efficient person in terms of time to complete a task and a more organized person with strong
-								communication and teamwork skills.</span></p>
-							<li>Mathematics Tutor</li>
-							<h6><i class="fa fa-clock"></i> May 2017 - Jul 2018</h6>
-							<p>
-								I was a very skilled in mathematics during high school and university (<span>I've always had a passion for knowledge</span>),
-								and often people asked me for meditations for "Bacalaureat", Mathematical Analysis and Special Mathematics.</p>
+							<p>I worked mostly as a designer in AutoCAD and other specific softwares to calculate and
+								design according to exact data. <span>This experience trained my quick thinking in
+									unpredictable situations.</span></p>
 						</ul>
 					</div>
 
-					<div id="Volunteering" class="tabcontent">
+					<div id="Education" class="tabcontent">
+						<h3>Educational Background</h3>
+						<ul>
+							<li>Ph.D. Candidate in Computer Science</li>
+							<h6><i class="fa fa-university"></i> University Politehnica Bucharest | 2025 - Ongoing</h6>
+							<p>Focused on <span>Artificial Intelligence</span>, designing AI models, and applying
+								machine learning techniques to solve complex problems.</p>
+
+							<li>Master's Degree in Artificial Intelligence</li>
+							<h6><i class="fa fa-university"></i> University Politehnica Bucharest | 2021 - 2025</h6>
+							<p>Advanced studies in AI.</p>
+
+							<li>Bachelor's Degree in Mechanical Engineering</li>
+							<h6><i class="fa fa-university"></i> University Politehnica Bucharest | 2017 - 2021</h6>
+							<p>Foundation in engineering and technical problem solving.</p>
+						</ul>
+					</div>
+
+					<div id="Extra" class="tabcontent">
+						<h3>Achievements</h3>
+						<ul>
+							<li>AIDays</li>
+							<h6><i class="fa fa-clock"></i>September 2025</h6>
+							<p> Poster Presentation</p>
+						</ul>
+					
+
 						<h3>Volunteering Projects</h3>
 						<ul>
 							<li>Volunteer - Act for Tomorrow</li>
 							<h6><i class="fa fa-clock"></i> July 2019 - September 2019</h6>
-							<p>
-								Being a very passionate person of nature, I went to help green the beaches by cleaning and organizing,
-								at another event organized by 'Act for Tomorrow' I helped to teach people to recycle properly.
-								<span>This experience gave me a connection with nature and made me a more patient and organized person
-								who works excellently in the team.</span></p>
+							<p>Actively contributed to environmental sustainability initiatives by coordinating coastal conservation efforts and community-led waste management. <span>Facilitated educational workshops on ecological responsibility and circular economy practices, strengthening my organizational skills and commitment to community leadership.</span></p>
+
 							<li>Volunteer - TOGETHER EVERYONE ACHIEVES MORE (TEAM)</li>
 							<h6><i class="fa fa-clock"></i> 2014 - 2016</h6>
-							<p>TEAM was a great experience, I often went in groups and hugged and said nice things
-								to different people on the street.
-								to make their days more beautiful, sometimes we organize play hours with children
-								(I organized a lot alone), other times we organize a recycling event or we do a workshop with different topics like "Better control of your emotions",
-								"How to be a better person" or "How to learn to open up to others".
-								<span>During this time I learned to put my priorities in order, how to organize my
-								time efficiently and to never be afraid to do some things by my own.</span></p>
+							<p>Engaged in community-building initiatives focused on social welfare and youth development. Organized and facilitated interactive workshops and charitable events designed to foster positive social dynamics. <span>This role refined my interpersonal communication, emotional intelligence, and ability to manage complex logistics under tight schedules.</span></p>
+
 							<li>Volunteer - Caravana Voluntarilor</li>
 							<h6><i class="fa fa-clock"></i> 2014 - 2015</h6>
-							<p>"Caravana Voluntarilor" was a large volunteer project through which we tried to organize as many
-								charitable events as possible, initially starting from several parades that promoted
-								happiness, love and respect for others, then we organized a social lunch for people
-								who wanted a hot meal, and as a final project I was among the main organizers of a
-								charity ball that aimed to raise funds to give all children in the area with limited
-								financial opportunities a Christmas present. <span>This experience helped me to know how to
-								take an attitude when a situation depends on me and to always try to make a difference
-								in society.</span></p>
+							<p>Collaborated on large-scale humanitarian projects to deliver community-focused charitable events. <span>Developed a proactive approach to problem-solving and took decisive initiative in high-pressure situations, fostering a deep sense of social accountability and leadership.</span></p>
 						</ul>
 					</div>
 
 					<div id="Skills" class="tabcontent">
-						<h3>Top Skills</h3>
-						<div class="wow fadeInUp container-skillbar" data-wow-delay="0.1s">
+						<h3>Technical Skills</h3>
+						<ul>
+							<li>Programming Languages</li>
+							<p>Java, Python, JavaScript, HTML, CSS</p>
 
-							<div class="skillbar clearfix " data-percent="100%">
-								<div class="skillbar-title" style="background: #9c84b5;"><span>Passion</span></div>
-								<div class="skillbar-bar" style="background: #9c84b5;"></div>
-								<div class="skill-bar-percent">100%</div>
-							</div>
+							<li>Frameworks & Architecture</li>
+							<p>Spring Boot, Spring, Angular JS, Django, Flask, Microservices, Service-Oriented
+								Architecture, Apache Kafka</p>
 
+							<li>Databases & Migrations</li>
+							<p>PostgreSQL, MongoDB, Azure Cosmos DB, Redis, MySQL, Amazon DocumentDB, SQLite, Liquibase,
+								Mongock</p>
 
-							<div class="skillbar clearfix " data-percent="85%">
-								<div class="skillbar-title" style="background: #9760d1;"><span>Java</span></div>
-								<div class="skillbar-bar" style="background: #9760d1;"></div>
-								<div class="skill-bar-percent">85%</div>
-							</div>
+							<li>Cloud & DevOps</li>
+							<p>Docker, AWS Services, Microsoft Azure, Google Cloud Platform, Linux, Terraform, GitHub
+								Actions, AWS CodeBuild</p>
 
+							<li>Artificial Intelligence & ML</li>
+							<p>Machine Learning, Natural Language Processing (NLP), Large Language Models</p>
 
-							<div class="skillbar clearfix " data-percent="80%">
-								<div class="skillbar-title" style="background: #8567a4;"><span>HTML5</span></div>
-								<div class="skillbar-bar" style="background: #8567a4;"></div>
-								<div class="skill-bar-percent">80%</div>
-							</div>
-
-							<div class="skillbar clearfix " data-percent="80%">
-								<div class="skillbar-title" style="background: #9c84b5;"><span>CSS3</span></div>
-								<div class="skillbar-bar" style="background: #9c84b5;"></div>
-								<div class="skill-bar-percent">80%</div>
-							</div>
-
-							<div class="skillbar clearfix " data-percent="70%">
-								<div class="skillbar-title" style="background: #9760d1;"><span>Python</span></div>
-								<div class="skillbar-bar" style="background: #9760d1;"></div>
-								<div class="skill-bar-percent">70%</div>
-							</div>
-
-							<div class="skillbar clearfix " data-percent="65%">
-								<div class="skillbar-title" style="background: #8567a4;"><span>Django</span></div>
-								<div class="skillbar-bar" style="background: #8567a4;"></div>
-								<div class="skill-bar-percent">65%</div>
-							</div>
-
-							<div class="skillbar clearfix " data-percent="60%">
-								<div class="skillbar-title" style="background: #9c84b5;"><span>JavaScript</span></div>
-								<div class="skillbar-bar" style="background: #9c84b5;"></div>
-								<div class="skill-bar-percent">60%</div>
-							</div>
-
-							<div class="skillbar clearfix " data-percent="55%">
-								<div class="skillbar-title" style="background: #8567a4;"><span>Android</span></div>
-								<div class="skillbar-bar" style="background: #8567a4;"></div>
-								<div class="skill-bar-percent">55%</div>
-							</div>
-
-							<div class="skillbar clearfix " data-percent="54%">
-								<div class="skillbar-title" style="background: #9c84b5;"><span>Git</span></div>
-								<div class="skillbar-bar" style="background: #9c84b5;"></div>
-								<div class="skill-bar-percent">54%</div>
-							</div>
-
-							<div class="skillbar clearfix " data-percent="50%">
-								<div class="skillbar-title" style="background: #8567a4;"><span>Photoshop</span></div>
-								<div class="skillbar-bar" style="background: #8567a4;"></div>
-								<div class="skill-bar-percent">50%</div>
-							</div>
-
-							<div class="skillbar clearfix " data-percent="30%">
-								<div class="skillbar-title" style="background: #8567a4;"><span>C++</span></div>
-								<div class="skillbar-bar" style="background: #8567a4;"></div>
-								<div class="skill-bar-percent">30%</div>
-							</div>
-
-							<div class="skillbar clearfix " data-percent="25%">
-								<div class="skillbar-title" style="background: #9760d1;"><span>jQuery</span></div>
-								<div class="skillbar-bar" style="background: #9760d1;"></div>
-								<div class="skill-bar-percent">25%</div>
-							</div>
-
-						</div>
+							<li>Tools & Methodologies</li>
+							<p>Git, GitHub, Bitbucket, Maven, Jira, Postman, Swagger, Bruno, SonarLint, Cucumber, Agile
+							</p>
+						</ul>
 					</div>
-
 				</div>
-
-
 			</section>
 
-
-			<!-- projects section -->
-			<!-- TODO: PRoiectele sunt cam varza, schimba tot > FA CARDURI QT -->
-			<section id="projects">
-				<h2 class="text-center">My projects</h2>
+			<section id="research">
+				<h2 class="text-center">Publications</h2>
 				<div class="indicator"></div>
-				<div class="container-fluid padding">
-					<div class="row padding" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-						<div class="col-md-4">
-							<div class="card">
-								<img src="./img/app-android.jpg" alt="">
-								<h3 class="card-titles">Bunny NomNom - Android App</h3>
-								<p class="card-bodys">The app's idea is unique and helpful in society,
-									the most cases of bunny's death is wrong alimentation that's why the app helps you to
-									create a specific meal for your furry friend and to keep track of it (I've used <span>Room</span> as database).</br>
-									Programing language: <span>Java</span></br>
-									IDE: <span>Android Studio</span></p>
+				<div class="container nobubbles" data-aos="fade-up" data-aos-duration="500">
+					<div class="research-container">
+						<p> To be added </p>
 
-								<a href="https://github.com/medz23/Bunny-NomNom" id="wobble_skew" class="btn btn-primary card-btns" target="_blank">See more</a>
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="card">
-								<img src="./img/app-site.jpg" alt="">
-								<h3 class="card-titles">Department's Website</h3>
-								<p class="card-bodys">I've created models in <span>Django</span> and worked evey page
-									from scratch, the idea of this site is to be as simple as posible for the person
-									that administate it, once you login as admin you can modify every important page.</br>
-									Back-end framework: <span>Django</span></br>
-									I've worked with:<span> MySQL, JavaScript, CSS3, HTML5</span> </p>
-
-								<a href="http://termo.pub.ro/" id="wobble_skew" class="btn btn-primary card-btns" target="_blank">See more</a>
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="card">
-								<img src="./img/app-site2.jpg" alt="">
-								<h3 class="card-titles">Calculating the Dimensions of a Water-Based Condenser</h3>
-								<p class="card-bodys">For web platform I've used Math's functions in <span>JavaScript</span>, my project
-									is a tool for correcting student's projects, you can calculate the right values in a few seconds, before it took a few hours, even days.
-									</br>
-									I've worked with:<span> JavaScript, CSS3, HTML5</span>
-								</p>
-								<p></p>
-								<a href="https://github.com/medz23/Calculating-the-Dimensions-of-a-Water-Based-Condenser" id="wobble_skew" class="btn btn-primary card-btns" target="_blank">See more</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="row padding" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-						<div class="col-md-4">
-							<div class="card">
-								<img src="./img/app-asame.jpg" alt="">
-								<h3 class="card-titles">Asame - Social Media</h3>
-								<p class="card-bodys"><span>Asame</span> is project in development for music lovers,
-									the models are made in <span></span>Django, I've used CRUD operations for
-									posts and the Spotify Web API to connect to spotify (using Spotipy),
-									future features: to make recomandations with AI to people that have
-									the same music taste.</br>
-									Back-end framework:<span> Django</span></br>
-									I've worked with: <span>SQLite, JavaScript, CSS3, HTML5 </span></p>
-								<a href="https://github.com/medz23/python-proiect-final-gad" id="wobble_skew" class="btn btn-primary card-btns" target="_blank">See more</a>
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="card">
-								<img src="./img/drona.jpg" alt="">
-								<h3 class="card-titles">Drone With Web Transmision - Digits Recogniser AI</h3>
-								<p class="card-bodys">I tried to
-									add a program for recognizing the values ​​on the measuring equipment
-									related to the laboratory of refrigeration equipment and live broadcasting of filming through its own web service, thus making the interaction of
-									distance of students with the studied laboratory.
-									</br>
-									I've worked with:<span> Linux, OpenCV, Keras, Tensorflow, Matplotlib</span>
-								</p>
-								<a href="https://github.com/medz23/Drone-With-Web-Transmision" id="wobble_skew" class="btn btn-primary card-btns" target="_blank">See more</a>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="card">
-								<img src="./img/app-siteDont.jpg" alt="">
-								<h3 class="card-titles">Don't Spill The Coffee - MiniGame</h3>
-								<p class="card-bodys">The game has simple rules, you don't have to spill coffee!
-									How do you do this? There are three doors turned, two contain coffee that is not spilled, and one contains a coffee spilled,
-									the idea of ​​the game is to turn the door with the coffee spilled at the end to win.
-									</br>
-									I've worked with:<span> JavaScript, CSS3, HTML5</span></p>
-								<p></p>
-								<a href="https://medz23.github.io/dont-spill/ id="wobble_skew" class="btn btn-primary card-btns" target="_blank">See more</a>
-							</div>
-						</div>
+						<!-- <p class="springer-citation">
+                            <strong>Mocanu, A. M. L.</strong>, [Co-Author Name]. (2025). 
+                            <a href="https://github.com/medz23" target="_blank" class="paper-link">Romanian ABSA Dataset (RoR): A Hybrid Annotation Approach Using LLMs for Aspect-Based Sentiment Analysis</a>. 
+                            In: <em>Proceedings of the [Conference/Journal Name]</em> (pp. xx-xx). Springer, Cham. 
+                            <a href="https://github.com/medz23" target="_blank">[View Paper]</a>
+                        </p> -->
 					</div>
 				</div>
-
 			</section>
 
-			<!-- certifications section -->
-			<section id="certifications" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+			<h2 class="text-center">Projects</h2>
+			<div class="indicator"></div>
+			<div class="container nobubbles" data-aos="fade-up" data-aos-duration="500">
+				<div class="project-container">
 
+					<div class="project-item">
+						<a target="_blank" class="project-title">NLP with Disaster Tweets (Kaggle)</a>
+						<p class="project-tech">Logistic Regression • BERT • BERTTweet Large</p>
+						<p class="project-desc">Participated in a Kaggle competition to build a machine learning model
+							predicting which Tweets are about real disasters. Achieved a top accuracy score of 0.84554
+							using a fine-tuned BertTweet Large model, experimenting with various text preprocessing
+							techniques and model architectures.</p>
+					</div>
+
+					<div class="project-item">
+						<a href="https://github.com/brittleru/abusive-language-detection" target="_blank"
+							class="project-title">Abusive Language Detection in Social Media</a>
+						<p class="project-tech">PyTorch • TensorFlow • Django • Python • Twitter API</p>
+						<p class="project-desc">Evaluated state-of-the-art abusive language datasets and deep learning
+							models to improve hate-speech classification. Trained 7 different models across 5 distinct
+							datasets to build an enhanced detection algorithm, successfully packaging the models into a
+							full-stack Django web application integrated with the Twitter API.</p>
+					</div>
+
+					<div class="project-item">
+						<a href="http://termo.pub.ro/" target="_blank" class="project-title">Department's Website
+							Content Management System</a>
+						<p class="project-tech">Django • Python • MySQL • JavaScript • HTML5/CSS3</p>
+						<p class="project-desc">Developed a full-stack Django web application tailored for a university
+							department. Implemented a secure, admin-friendly CMS that enables non-technical academic
+							staff to seamlessly modify pages and manage content.</p>
+					</div>
+
+					<div class="project-item">
+						<a href="https://github.com/medz23/Bunny-NomNom" target="_blank" class="project-title">Bunny
+							NomNom - Android App</a>
+						<p class="project-tech">Java • Android Studio • Room Database</p>
+						<p class="project-desc">Built a mobile application to help prevent common pet health issues
+							caused by incorrect alimentation. The app allows users to create specific, healthy meal
+							plans for their bunnies and track their daily diets using a local Room database.</p>
+					</div>
+
+					<div class="project-item">
+						<a href="https://github.com/medz23/python-proiect-final-gad" target="_blank"
+							class="project-title">Asame - Social Media for Music Lovers</a>
+						<p class="project-tech">Django • SQLite • JavaScript • Spotify Web API (Spotipy)</p>
+						<p class="project-desc">Created a specialized social media platform integrating the Spotify Web
+							API. Implemented full CRUD operations for user posts and designed the backend architecture
+							to support future AI-driven music recommendations based on user taste profiles.</p>
+					</div>
+
+				</div>
+			</div>
+			</section>
+
+			<section id="certifications" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
 				<div class="togglerC container ">
 					<h2 class="text-center">My certifications</h2>
 					<div class="indicator"></div>
-					<button class="tablinks-c active" onclick="toggleFunction(event, 'Google')"><img src="./img/google.png" alt=""> Atelierul Google</button>
-					<button class="tablinks-c" onclick="toggleFunction(event, 'Freecodecamp')"><img src="./img/freecode.png" alt=""> Freecodecamp</button>
-					<button class="tablinks-c" onclick="toggleFunction(event, 'Codecademy')"><img src="./img/codecademy.png" alt=""> Codecademy</button>
+					<button class="tablinks-c active" onclick="toggleFunction(event, 'Google')"><img
+							src="./img/google.png" alt=""> Atelierul Google</button>
+					<button class="tablinks-c" onclick="toggleFunction(event, 'Coursera')"><img src="./img/coursera.png"
+							alt=""> Coursera</button>
+					<button class="tablinks-c" onclick="toggleFunction(event, 'Freecodecamp')"><img
+							src="./img/freecode.png" alt=""> Freecodecamp</button>
+					<button class="tablinks-c" onclick="toggleFunction(event, 'Codecademy')"><img
+							src="./img/codecademy.png" alt=""> Codecademy</button>
 
 					<div id="Google" class="tabcontent-c active2">
 						<div class="container-fluid padding">
 							<div class="row padding centerimgs">
 								<div class="col-md-6 col-sm-12">
-									<img src="./img/dAndroid.jpeg" alt=""></a>
+									<img src="./img/dML.png" alt="">
 								</div>
 								<div class="col-md-6 col-sm-12">
-									<img src="./img/dPython.jpeg" alt=""></a>
+									<img src="./img/dAndroid.jpeg" alt="">
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<img src="./img/dPython.jpeg" alt="">
 								</div>
 							</div>
 						</div>
 					</div>
 
+					<div id="Coursera" class="tabcontent-c">
+						<div class="container-fluid padding">
+							<div class="row padding">
+								<div class="col-md-6 col-sm-12">
+									<img src="./img/dCoursera1.png" alt="">
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<img src="./img/dcoursera2.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div id="Freecodecamp" class="tabcontent-c">
 						<div class="container-fluid padding">
 							<div class="row padding">
 								<div class="col-md-6 col-sm-12">
-									<img src="./img/c1.png" alt=""></a>
+									<img src="./img/c1.png" alt="">
 								</div>
 								<div class="col-md-6 col-sm-12">
-									<img src="./img/c3.png" alt=""></a>
+									<img src="./img/c3.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -395,107 +331,44 @@
 						<div class="container-fluid padding">
 							<div class="row padding">
 								<div class="col-md-6 col-sm-12">
-									<img src="./img/codea1.png" alt=""></a>
+									<img src="./img/codea1.png" alt="">
 								</div>
 								<div class="col-md-6 col-sm-12">
-									<img src="./img/codea2.png" alt=""></a>
+									<img src="./img/codea2.png" alt="">
 								</div>
 							</div>
 							<div class="row padding">
 								<div class="col-md-6 col-sm-12">
-									<img src="./img/codea3.png" alt=""></a>
+									<img src="./img/codea3.png" alt="">
 								</div>
-
 								<div class="col-md-6 col-sm-12">
-									<img src="./img/codea4.png" alt=""></a>
+									<img src="./img/codea4.png" alt="">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</section>
-
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
-			<div class="bubble"></div>
 		</div>
 	</div>
-	<!-- footer section also contact me  -->
+
 	<footer id="profile-lin">
 		<h2 class="text-center">Contact Me</h2>
 		<div class="contact-me">
-
-			<a href="https://www.linkedin.com/in/ana-maria-luisa-mogoase-87b4221b3/" class="left-linkedin" target="_blank">
+			<a href="https://www.linkedin.com/in/ana-maria-luisa-mocanu-87b4221b3/" class="left-linkedin"
+				target="_blank">
 				<i class="fab fa-linkedin"></i></a>
-
 			<a href="https://www.facebook.com/chenmeddy/" target="_blank">
 				<i class="fab fa-facebook"></i></a>
-
-			<a href="https://www.instagram.com/meddy_23/?fbclid=IwAR3G3DDauTUwV70yyjisZpN890FT86wpnOZQHY7XLdYq2azWk8-RobkYUPI" target="_blank">
+			<a href="https://www.instagram.com/meddy_23/?fbclid=IwAR3G3DDauTUwV70yyjisZpN890FT86wpnOZQHY7XLdYq2azWk8-RobkYUPI"
+				target="_blank">
 				<i class="fab fa-instagram"></i></a>
-
 			<a href="https://github.com/medz23" target="_blank">
 				<i class="fab fa-github"></i></a>
-
-
 		</div>
 		<div class="indicator-contact"> </div>
-		<p class="copyright">Copyright <i class="fa fa-copyright"></i>
-			2021 <span>Mogoase Ana-Maria Luisa</span></p>
+		<p class="copyright">Copyright <i class="fa fa-copyright"></i> 2026 <span>Mocanu Ana-Maria Luisa</span></p>
 	</footer>
-	<script src="./main.js">
-
-	</script>
 </body>
 
 </html>

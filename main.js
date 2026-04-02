@@ -1,38 +1,34 @@
-// aos animations
+// Init AOS animations
 AOS.init();
 
-// smooth scroll
+// Smooth scroll
 let mainNavLinks = document.querySelectorAll("nav ul li a");
-
-mainNavLinks.forEach(link => {
-  link.addEventListener("click", event => {
+mainNavLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
     event.preventDefault();
     let target = document.querySelector(event.target.hash);
     target.scrollIntoView({
       behavior: "smooth",
-      block: "start"
+      block: "start",
     });
   });
 });
 
+// Typewriter Welcome Section
 let i = 0,
   a = 0,
   isBackspacing = false,
   isParagraph = false;
-
-// typewriter welcome section
 let textArray = [
-  "|WEB DEVELOPER",
-  "|ARTIFICIAL INTELLIGENCE STUDENT",
-  "|ANDROID DEVELOPMENT ENTHUSIAST",
+  "|SOFTWARE ENGINEER",
+  "|PHD STUDENT IN COMPUTER SCIENCE",
+  "|NLP & AI RESEARCHER",
 ];
-
 
 let speedForward = 100,
   speedWait = 1000,
   speedBetweenLines = 1000,
   speedBackspace = 25;
-
 
 typeWriter("lead", textArray);
 
@@ -43,111 +39,109 @@ function typeWriter(id, ar) {
     eParagraph = element.children("p");
 
   if (!isBackspacing) {
-
     if (i < aString.length) {
-
       if (aString.charAt(i) == "|") {
         isParagraph = true;
         eHeader.removeClass("font-weight-light");
         eParagraph.addClass("font-weight-light");
         i++;
-        setTimeout(function() {
+        setTimeout(function () {
           typeWriter(id, ar);
         }, speedBetweenLines);
-
       } else {
-
         if (!isParagraph) {
           eHeader.text(eHeader.text() + aString.charAt(i));
         } else {
           eParagraph.text(eParagraph.text() + aString.charAt(i));
         }
         i++;
-        setTimeout(function() {
+        setTimeout(function () {
           typeWriter(id, ar);
         }, speedForward);
       }
-
     } else if (i == aString.length) {
-
       isBackspacing = true;
-      setTimeout(function() {
+      setTimeout(function () {
         typeWriter(id, ar);
       }, speedWait);
-
     }
-
   } else {
-
     if (eHeader.text().length > 0 || eParagraph.text().length > 0) {
-
       if (eParagraph.text().length > 0) {
-        eParagraph.text(eParagraph.text().substring(0, eParagraph.text().length - 1));
+        eParagraph.text(
+          eParagraph.text().substring(0, eParagraph.text().length - 1),
+        );
       } else if (eHeader.text().length > 0) {
         eParagraph.removeClass("font-weight-light");
         eHeader.addClass("font-weight-light");
         eHeader.text(eHeader.text().substring(0, eHeader.text().length - 1));
       }
-      setTimeout(function() {
+      setTimeout(function () {
         typeWriter(id, ar);
       }, speedBackspace);
-
-
     } else {
-
       isBackspacing = false;
       i = 0;
       isParagraph = false;
       a = (a + 1) % ar.length;
-      setTimeout(function() {
+      setTimeout(function () {
         typeWriter(id, ar);
       }, 50);
-
     }
   }
 }
 
-// bubbles
-
-
-// work section
+// Work Section Tabs
 function openWork(evt, works) {
-  let i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  let tabcontent = document.getElementsByClassName("tabcontent");
+  for (let j = 0; j < tabcontent.length; j++) {
+    tabcontent[j].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  let tablinks = document.getElementsByClassName("tablinks");
+  for (let j = 0; j < tablinks.length; j++) {
+    tablinks[j].className = tablinks[j].className.replace(" active", "");
   }
   document.getElementById(works).style.display = "block";
   evt.currentTarget.className += " active";
-  if (works === "Skills" && document.getElementById(works).style.display === "block") {
-    $(".skillbar").each(function() {
+
+  if (
+    works === "Skills" &&
+    document.getElementById(works).style.display === "block"
+  ) {
+    $(".skillbar").each(function () {
       $(this)
         .find(".skillbar-bar")
-        .animate({
-            width: $(this).attr("data-percent")
-          },
-          2500)
-
+        .animate({ width: $(this).attr("data-percent") }, 2500);
     });
-
   }
 }
 
-// certifications section
+// Certifications Section Tabs
 function toggleFunction(evt, certifications) {
-  let i, tabcontentc, tablinksc;
-  tabcontentc = document.getElementsByClassName("tabcontent-c");
-  for (i = 0; i < tabcontentc.length; i++) {
-    tabcontentc[i].style.display = "none";
+  let tabcontentc = document.getElementsByClassName("tabcontent-c");
+  for (let j = 0; j < tabcontentc.length; j++) {
+    tabcontentc[j].style.display = "none";
   }
-  tablinksc = document.getElementsByClassName("tablinks-c");
-  for (i = 0; i < tablinksc.length; i++) {
-    tablinksc[i].className = tablinksc[i].className.replace(" active", "");
+  let tablinksc = document.getElementsByClassName("tablinks-c");
+  for (let j = 0; j < tablinksc.length; j++) {
+    tablinksc[j].className = tablinksc[j].className.replace(" active", "");
   }
   document.getElementById(certifications).style.display = "block";
   evt.currentTarget.className += " active";
+}
+
+// Generate Background Bubbles Dynamically to keep HTML clean
+$(document).ready(function () {
+  let container = document.getElementById("bubbles-container");
+  for (let j = 0; j < 30; j++) {
+    let bubble = document.createElement("div");
+    bubble.className = "bubble";
+    let size = Math.floor(Math.random() * 60) + 20 + "px"; // Random size 20px-80px
+    bubble.style.width = size;
+    bubble.style.height = size;
+    bubble.style.left = Math.floor(Math.random() * 100) + "%";
+    bubble.style.animationDuration = Math.floor(Math.random() * 6) + 4 + "s";
+    bubble.style.animationDelay = Math.floor(Math.random() * 5) + "s";
+    container.appendChild(bubble);
   }
+});
