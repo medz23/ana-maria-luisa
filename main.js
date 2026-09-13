@@ -20,9 +20,10 @@ let i = 0,
   isBackspacing = false,
   isParagraph = false;
 let textArray = [
-  "|SOFTWARE ENGINEER",
+  "|DATA SCIENTIST",
   "|PHD STUDENT IN COMPUTER SCIENCE",
   "|NLP & AI RESEARCHER",
+  "|SOFTWARE ENGINEER",
 ];
 
 let speedForward = 100,

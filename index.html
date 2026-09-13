@@ -100,10 +100,16 @@
 					<div id="Work" class="tabcontent active">
 						<h3>Work Experience</h3>
 						<ul>
+							<li>Data Scientist - Endava</li>
+							<h6><i class="fa fa-clock"></i> June 2026 - Present</h6>
+							<p>I apply machine learning and NLP to data-driven problems. <span>This role builds directly
+									on my research work and my software-engineering background from previous fintech
+									projects.</span></p>
+
 							<li>Software Engineer - Endava</li>
-							<h6><i class="fa fa-clock"></i> December 2021 - Present</h6>
-							<p>I collaborate with dedicated teams on designing and developing fintech projects.
-								<span>This role has enhanced my skills in software development, Agile methodologies, and
+							<h6><i class="fa fa-clock"></i> December 2021 - June 2026</h6>
+							<p>I collaborated with dedicated teams on designing and developing fintech projects.
+								<span>This role enhanced my skills in software development, Agile methodologies, and
 									attention to detail while working with service-oriented and microservice
 									architectures.</span></p>
 
@@ -152,6 +158,21 @@
 							<li>AIDays</li>
 							<h6><i class="fa fa-clock"></i>September 2025</h6>
 							<p> Poster Presentation</p>
+
+							<li>Oral Presentation - DAWAK 2026</li>
+							<h6><i class="fa fa-microphone"></i> August 2026</h6>
+							<p> Presented at the 28th International Conference on Big Data Analytics and Knowledge
+								Discovery. <span>Read more about ACAT in the Research section above.</span></p>
+
+							<li>Oral Presentation &amp; Poster - CLEF 2026</li>
+							<h6><i class="fa fa-microphone"></i> September 2026</h6>
+							<p> Presented at the Conference and Labs of the Evaluation Forum: IROH ranked 1st on JOKER
+								Task 1 English (0.6347 MAP), and the multimodal sexism-detection system ranked 29th of
+								114 on EXIST Subtask 2.2. <span>Read more in the Research section above.</span></p>
+
+							<li>Poster Session - Best Romanian AI Thesis Awards</li>
+							<h6><i class="fa fa-trophy"></i> September 2026</h6>
+							<p> Presented at Romanian AI Days.</p>
 						</ul>
 					
 
@@ -190,7 +211,8 @@
 								Actions, AWS CodeBuild</p>
 
 							<li>Artificial Intelligence & ML</li>
-							<p>Machine Learning, Natural Language Processing (NLP), Large Language Models</p>
+							<p>Machine Learning, Natural Language Processing (NLP), Large Language Models, Multimodal
+								Learning, LLM Fine-tuning (LoRA/QLoRA), PyTorch, Hugging Face</p>
 
 							<li>Tools & Methodologies</li>
 							<p>Git, GitHub, Bitbucket, Maven, Jira, Postman, Swagger, Bruno, SonarLint, Cucumber, Agile
@@ -205,14 +227,26 @@
 				<div class="indicator"></div>
 				<div class="container nobubbles" data-aos="fade-up" data-aos-duration="500">
 					<div class="research-container">
-						<p> To be added </p>
+						<p class="springer-citation">
+							<strong>Mocanu, A. M. L.</strong>, Mocanu, S., Truică, C. O., Apostol, E. S. (2026).
+							<a href="https://github.com/DS4AI-UPB/VANGUARD-CLEF2026-JOKER" target="_blank" class="paper-link">IROH: Insightful Ranking Of Humor using Multi-Stage Hybrid Retrieval with Rationale-Distilled LLM Judges</a>.
+							In: <em>CLEF 2026, JOKER Lab, Task 1 English</em>. &#127942; 1st place &middot; 0.6347 MAP.
+							<a href="https://github.com/DS4AI-UPB/VANGUARD-CLEF2026-JOKER" target="_blank">[Code]</a>
+						</p>
 
-						<!-- <p class="springer-citation">
-                            <strong>Mocanu, A. M. L.</strong>, [Co-Author Name]. (2025). 
-                            <a href="https://github.com/medz23" target="_blank" class="paper-link">Romanian ABSA Dataset (RoR): A Hybrid Annotation Approach Using LLMs for Aspect-Based Sentiment Analysis</a>. 
-                            In: <em>Proceedings of the [Conference/Journal Name]</em> (pp. xx-xx). Springer, Cham. 
-                            <a href="https://github.com/medz23" target="_blank">[View Paper]</a>
-                        </p> -->
+						<p class="springer-citation">
+							<strong>Mocanu, A. M. L.</strong>, Mocanu, S., Truică, C. O., Apostol, E. S. (2026).
+							<a href="https://github.com/DS4AI-UPB/VANGUARD-CLEF2026-EXIST" target="_blank" class="paper-link">Through the Eyes of the Beholder: Biometric and Demographic Conditioning for Multimodal Sexism Detection</a>.
+							In: <em>CLEF 2026, EXIST Lab, Task 2</em>. Top 29 of 114 (Subtask 2.2, soft evaluation).
+							<a href="https://github.com/DS4AI-UPB/VANGUARD-CLEF2026-EXIST" target="_blank">[Code]</a>
+						</p>
+
+						<p class="springer-citation">
+							<strong>Mocanu, A. M. L.</strong>, Truică, C. O., Apostol, E. S. (2026).
+							<a href="https://arxiv.org/pdf/2606.04189" target="_blank" class="paper-link">ACAT: A Collaborative Platform for Efficient Aspect-Based Sentiment Dataset Annotation</a>.
+							<em>arXiv:2606.04189</em>.
+							<a href="https://arxiv.org/pdf/2606.04189" target="_blank">[PDF]</a>
+						</p>
 					</div>
 				</div>
 			</section>
@@ -221,6 +255,32 @@
 			<div class="indicator"></div>
 			<div class="container nobubbles" data-aos="fade-up" data-aos-duration="500">
 				<div class="project-container">
+
+					<div class="project-item">
+						<span class="project-badge">&#127942; 1st place &middot; CLEF 2026 JOKER</span>
+						<a href="https://github.com/DS4AI-UPB/VANGUARD-CLEF2026-JOKER" target="_blank" class="project-title">IROH: Humor Retrieval Pipeline</a>
+						<p class="project-tech">BM25 + Dense Retrieval • Cross-Encoder Reranker • LoRA/QLoRA LLM Judges</p>
+						<p class="project-desc">Built a three-stage humor retrieval pipeline combining hybrid sparse-dense retrieval, a finetuned cross-encoder reranker, and an ensemble of LoRA-adapted LLM judges trained on distilled rationales, ranking 1st on the official JOKER 2026 Task 1 English leaderboard with a MAP of 0.6347.</p>
+					</div>
+
+					<div class="project-item">
+						<span class="project-badge">Top 29 of 114 &middot; CLEF 2026 EXIST</span>
+						<a href="https://github.com/DS4AI-UPB/VANGUARD-CLEF2026-EXIST" target="_blank" class="project-title">Multimodal Sexism Detection in Memes</a>
+						<p class="project-tech">CLIP + XLM-RoBERTa • FiLM Conditioning • Cross-Attention</p>
+						<p class="project-desc">Developed a human-centered multimodal model fusing meme text, a generated visual description, the image, annotator demographics, and physiological signals, using cross-attention to ground the description in the image and FiLM to condition on annotator context.</p>
+					</div>
+
+					<div class="project-item">
+						<a href="https://arxiv.org/pdf/2606.04189" target="_blank" class="project-title">ACAT: Collaborative Annotation Tool for ABSA</a>
+						<p class="project-tech">Flask • PostgreSQL • Docker</p>
+						<p class="project-desc">A web-based annotation platform covering four ABSA tasks of increasing granularity, computing inter-annotator agreement (Cohen's/Fleiss' Kappa) directly at export time and exporting to CSV, JSON, and XML. Published as an arXiv preprint.</p>
+					</div>
+
+					<div class="project-item">
+						<a href="https://github.com/medz23/scholar-rank" target="_blank" class="project-title">Scholar Rank: Python Exam IDE</a>
+						<p class="project-tech">Flask • PostgreSQL • Docker • Monaco Editor</p>
+						<p class="project-desc">A web-based exam platform where students solve Python problems in a browser IDE and their code is graded automatically inside sandboxed Docker containers. Includes a professor dashboard, randomized problem pools, and anti-cheat measures, and is actively used for live lab exams.</p>
+					</div>
 
 					<div class="project-item">
 						<a target="_blank" class="project-title">NLP with Disaster Tweets (Kaggle)</a>
@@ -276,6 +336,8 @@
 				<div class="togglerC container ">
 					<h2 class="text-center">My certifications</h2>
 					<div class="indicator"></div>
+					<button class="tablinks-c" onclick="toggleFunction(event, 'Anthropic')"><img
+							src="./img/ac_mcp.png" alt=""> Anthropic</button>
 					<button class="tablinks-c active" onclick="toggleFunction(event, 'Google')"><img
 							src="./img/google.png" alt=""> Atelierul Google</button>
 					<button class="tablinks-c" onclick="toggleFunction(event, 'Coursera')"><img src="./img/coursera.png"
@@ -284,6 +346,25 @@
 							src="./img/freecode.png" alt=""> Freecodecamp</button>
 					<button class="tablinks-c" onclick="toggleFunction(event, 'Codecademy')"><img
 							src="./img/codecademy.png" alt=""> Codecademy</button>
+
+					<div id="Anthropic" class="tabcontent-c">
+						<div class="container-fluid padding">
+							<div class="row padding centerimgs">
+								<div class="col-md-6 col-sm-12">
+									<img src="./img/ac_mcp.png" alt="Introduction to Model Context Protocol certificate">
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<img src="./img/ac_skills.png" alt="Introduction to agent skills certificate">
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<img src="./img/ac_claudecode.png" alt="Claude Code in Action certificate">
+								</div>
+								<div class="col-md-6 col-sm-12">
+									<img src="./img/ac_api.png" alt="Building with the Claude API certificate">
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div id="Google" class="tabcontent-c active2">
 						<div class="container-fluid padding">
@@ -355,8 +436,12 @@
 	<footer id="profile-lin">
 		<h2 class="text-center">Contact Me</h2>
 		<div class="contact-me">
-			<a href="https://www.linkedin.com/in/ana-maria-luisa-mocanu-87b4221b3/" class="left-linkedin"
-				target="_blank">
+			<a href="mailto:ana_maria.mogoase@upb.ro" class="left-linkedin">
+				<i class="fa fa-envelope"></i></a>
+			<a href="https://scholar.google.com/citations?user=Kw4_jBMAAAAJ&hl=en" target="_blank">
+				<i class="fa fa-graduation-cap"></i></a>
+			<a href="https://huggingface.co/Medi" target="_blank" class="hf-link" title="Hugging Face">🤗</a>
+			<a href="https://www.linkedin.com/in/ana-maria-luisa-mocanu-87b4221b3/" target="_blank">
 				<i class="fab fa-linkedin"></i></a>
 			<a href="https://www.facebook.com/chenmeddy/" target="_blank">
 				<i class="fab fa-facebook"></i></a>
