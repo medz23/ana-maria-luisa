@@ -575,6 +575,30 @@ h2 {
   transform: scale(1.2);
 }
 
+.cv-download-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: var(--clr-accent-400);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cv-download-btn:hover {
+  background: #fff;
+  color: var(--clr-accent-400);
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
 .left-linkedin {
   margin-left: 0px !important;
 }
