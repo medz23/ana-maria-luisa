@@ -921,6 +921,11 @@ button {
   color: var(--accent);
 }
 
+/* space between consecutive paragraphs in one timeline entry */
+.timeline p:not(.meta) + p {
+  margin-top: 8px;
+}
+
 /* skills */
 .skills {
   display: grid;
@@ -1150,6 +1155,13 @@ button {
   border: 2px solid var(--line);
   background: #fff;
   transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Square badges (e.g. Credly): show the whole badge instead of cropping it to 4:3 */
+.cert-badge img {
+  object-fit: contain;
+  object-position: center;
+  padding: 12px;
 }
 
 .cert:hover img {
